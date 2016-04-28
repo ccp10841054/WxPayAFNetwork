@@ -1,0 +1,16 @@
+//
+//  WXpayPrefixHeader.pch
+//  WXpay
+//
+//  Created by sandy on 12/7/15.
+//  Copyright (c) 2015 sandy. All rights reserved.
+//
+
+#ifndef WXpay_WXpayPrefixHeader_pch
+#define WXpay_WXpayPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define WX_AppID   @"wx79e16f1932ef07e1"
+#define WX_URL     @"http://220.113.9.180/park/parking/WXAPPay.action?"
+#endif
