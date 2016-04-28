@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98ABFD1C1CD1EC7D00AFA2DC /* url_info.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98ABFD1B1CD1EC7D00AFA2DC /* url_info.jpg */; };
 		98B673971C1181E7001CE029 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B673961C1181E7001CE029 /* main.m */; };
 		98B6739A1C1181E7001CE029 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B673991C1181E7001CE029 /* AppDelegate.m */; };
 		98B6739D1C1181E7001CE029 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B6739C1C1181E7001CE029 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98ABFD181CD1EBB900AFA2DC /* Readme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Readme.h; sourceTree = "<group>"; };
+		98ABFD1B1CD1EC7D00AFA2DC /* url_info.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = url_info.jpg; sourceTree = "<group>"; };
 		98B673911C1181E7001CE029 /* WXpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B673951C1181E7001CE029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98B673961C1181E7001CE029 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 		98B673881C1181E7001CE029 = {
 			isa = PBXGroup;
 			children = (
+				98ABFD1B1CD1EC7D00AFA2DC /* url_info.jpg */,
 				98B673C01C118396001CE029 /* libc++.dylib */,
 				98B673BE1C118388001CE029 /* libsqlite3.0.dylib */,
 				98B673BC1C118377001CE029 /* libz.dylib */,
@@ -124,6 +128,7 @@
 		98B673931C1181E7001CE029 /* WXpay */ = {
 			isa = PBXGroup;
 			children = (
+				98ABFD181CD1EBB900AFA2DC /* Readme.h */,
 				98B673981C1181E7001CE029 /* AppDelegate.h */,
 				98B673991C1181E7001CE029 /* AppDelegate.m */,
 				98B6739B1C1181E7001CE029 /* ViewController.h */,
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98B673A01C1181E7001CE029 /* Main.storyboard in Resources */,
+				98ABFD1C1CD1EC7D00AFA2DC /* url_info.jpg in Resources */,
 				98B673A51C1181E7001CE029 /* LaunchScreen.xib in Resources */,
 				98B673A21C1181E7001CE029 /* Images.xcassets in Resources */,
 			);
