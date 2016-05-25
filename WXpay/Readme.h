@@ -20,7 +20,7 @@
 注意：a)返回数据类型，基本完整的如下
     session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/plain", @"text/html", nil];
     b)一般注意输写规范，一般url头 body params
-    c)一般处理dic时，请先判断是否为空，以免本贵
+    c)一般处理dic时，请先判断是否为空，以免奔溃
 
 1.POST:
 
@@ -49,3 +49,20 @@ AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
 } failure:^(NSURLSessionTask *operation, NSError *error) {
     NSLog(@"Error: %@", error);
 }];
+
+
+2.解析Json有四种方式：touchJson、SBJson、JSonKit和系统解析方法NSJSONSerialization。
+
+　　下面主要介绍SBJson解析Json的方法：
+
+　　首先在Build Phases中需要导入库文件：libxml2.dylib。
+
+　　然后导入第三方包GDataXMLNode.h和GDataXMLNode.m文件
+
+　　新建程序，利用NSConnection方法或者ASIHTTPRequest方法下载XML文件，下面以ASIHTTPRequest方法为例，在ASIHTTPRequestDelegate协议方法中进行XML文件解析。
+-(void)requestFinished:(ASIHTTPRequest *)request {
+    [mData setLength:0];
+    [mData appendData:[request responseData]];
+//用字典来接受下载的Json数据
+    NSDictionary *dict = [mData JSONValue];
+}
